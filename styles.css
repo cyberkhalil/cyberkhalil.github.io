@@ -26,18 +26,24 @@ body {
 
 /* Navigation */
 .main-nav { 
-    background: rgba(10, 25, 47, 0.85);
+    background: rgba(10, 25, 47, 0.95);
     backdrop-filter: blur(10px);
-    padding: 20px 0; 
+    padding: 15px 0; 
     position: fixed; 
     width: 100%; 
     top: 0; 
     z-index: 1000;
     border-bottom: 1px solid var(--glass);
 }
-.nav-container { display: flex; justify-content: space-between; align-items: center; }
+.nav-container { display: flex; justify-content: space-between; align-items: center; position: relative; }
 .logo { font-weight: 800; font-size: 1.5rem; color: var(--white); }
 .logo span { color: var(--primary); }
+.menu-icon {
+    display: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
 .nav-links { display: flex; list-style: none; align-items: center; }
 .nav-links li { margin-right: 30px; }
 .nav-links a { 
@@ -124,9 +130,57 @@ body {
     border-radius: 8px; 
     transition: 0.3s; 
     border: 1px solid transparent;
+	text-align: center;
+	align-items: center;
 }
 .exp-card:hover { transform: translateY(-10px); border-color: var(--primary); background: #172a45; }
-.card-icon { font-size: 2.5rem; color: var(--primary); margin-bottom: 25px; }
+.card-icon {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* تحسين القائمة للهواتف */
+.menu-toggle {
+    display: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+
+    .nav-links {
+        display: none; /* مخفية افتراضياً في الجوال */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background: var(--dark-alt);
+        padding: 20px;
+        border-top: 1px solid var(--glass);
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex; /* تظهر عند الضغط على الزر */
+    }
+
+    .nav-links li { margin: 0; width: 100%; text-align: center; }
+    .nav-links li margin-right { 0; }
+    
+    .hero-grid { grid-template-columns: 1fr; text-align: center; }
+    .hero-avatar { order: -1; }
+    
+    .hero-grid { grid-template-columns: 1fr; text-align: center; }
+    .hero-avatar { order: -1; }
+    .hero-btns { justify-content: center; }
+}
 .exp-card h3 { color: var(--white); margin-bottom: 15px; font-size: 1.3rem; }
 .exp-card p { color: var(--text-dim); font-size: 1rem; }
 
@@ -179,7 +233,24 @@ body {
 }
 
 @media (max-width: 768px) {
-    .nav-links { display: none; } /* يمكن إضافة قائمة Burger مستقبلاً */
-    .footer-top { flex-direction: column; gap: 30px; text-align: center; }
-    .footer-links a { margin: 0 10px; }
+    /* إصلاح مباشر لظهور التذييل */
+    .main-footer {
+        display: block !important; /* إجبار العنصر على الظهور */
+        visibility: visible !important;
+        opacity: 1 !important;
+        padding: 40px 0 !important;
+        position: relative !important;
+        clear: both !important;
+    }
+
+    .footer-top {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 20px !important;
+    }
+
+    .footer-links {
+        justify-content: center !important;
+        margin-top: 15px !important;
+    }
 }

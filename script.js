@@ -90,4 +90,27 @@ videoIds.forEach(id => {
             document.getElementById(`title-${id}`).innerText = "مشاهدة الفيديو على يوتيوب";
         });
 });
+
+	// وظيفة القائمة المتنقلة (Mobile Menu) - نسخة معدلة ومضمونة
+	const menuToggle = document.getElementById('mobile-menu');
+	const navLinks = document.getElementById('nav-links');
+
+	if (menuToggle && navLinks) {
+		menuToggle.addEventListener('click', () => {
+			navLinks.classList.toggle('active');
+			// تغيير شكل الأيقونة من قضبان إلى X
+			const icon = menuToggle.querySelector('i');
+			icon.classList.toggle('fa-bars');
+			icon.classList.toggle('fa-times');
+		});
+
+		// إغلاق القائمة تلقائياً عند الضغط على أي رابط لتسهيل التصفح
+		document.querySelectorAll('.nav-links a').forEach(link => {
+			link.addEventListener('click', () => {
+				navLinks.classList.remove('active');
+				menuToggle.querySelector('i').classList.add('fa-bars');
+				menuToggle.querySelector('i').classList.remove('fa-times');
+			});
+		});
+	}
 });
