@@ -154,26 +154,47 @@ body {
 @media (max-width: 768px) {
     .menu-toggle { display: block; }
 
-    .nav-links {
-        display: none; /* مخفية افتراضياً في الجوال */
+.nav-links {
+        /* بدلاً من display: none نستخدم الخصائص التالية للتحريك */
+        display: flex; 
         flex-direction: column;
         position: absolute;
         top: 100%;
-        right: 0;
+        left: 0;
         width: 100%;
         background: var(--dark-alt);
-        padding: 20px;
-        border-top: 1px solid var(--glass);
-        text-align: center;
+        padding: 0; /* سنغير الـ padding عند التفعيل */
+        gap: 0;
+        
+        /* حالة الإخفاء الافتراضية */
+        max-height: 0; /* إخفاء الارتفاع */
+        overflow: hidden; /* إخفاء المحتوى الخارج عن الارتفاع */
+        opacity: 0; /* شفافية كاملة */
+        transform: translateY(-10px); /* إزاحة بسيطة للأعلى */
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* حركة ناعمة */
+        border-bottom: 0px solid var(--primary);
     }
 
     .nav-links.active {
-        display: flex; /* تظهر عند الضغط على الزر */
+        /* حالة الظهور عند إضافة كلاس active */
+        max-height: 400px; /* نعطي قيمة كافية لمحتويات القائمة */
+        opacity: 1;
+        transform: translateY(0); /* العودة لمكانه الطبيعي */
+        padding: 20px 0;
+        border-bottom: 2px solid var(--primary);
     }
 
-    .nav-links li { margin: 0; width: 100%; text-align: center; }
-    .nav-links li margin-right { 0; }
-    
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+        opacity: 0;
+        transition: 0.3s ease;
+    }
+
+    .nav-links.active li {
+        opacity: 1; /* ظهور الروابط تدريجياً */
+    }    
     .hero-grid { grid-template-columns: 1fr; text-align: center; }
     .hero-avatar { order: -1; }
     
@@ -235,22 +256,22 @@ body {
 @media (max-width: 768px) {
     /* إصلاح مباشر لظهور التذييل */
     .main-footer {
-        display: block !important; /* إجبار العنصر على الظهور */
-        visibility: visible !important;
-        opacity: 1 !important;
-        padding: 40px 0 !important;
-        position: relative !important;
-        clear: both !important;
+        display: block; /* إجبار العنصر على الظهور */
+        visibility: visible;
+        opacity: 1;
+        padding: 40px 0;
+        position: relative;
+        clear: both;
     }
 
     .footer-top {
-        flex-direction: column !important;
-        text-align: center !important;
-        gap: 20px !important;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
     }
 
     .footer-links {
-        justify-content: center !important;
-        margin-top: 15px !important;
+        justify-content: center;
+        margin-top: 15px;
     }
 }
