@@ -1,1037 +1,146 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" data-lang="ar">
-
+<html lang="ar" dir="rtl" id="html-tag">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <meta name="theme-color" content="#2c3e50">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>محمود وليد خليل | سايبر خليل</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محمود الشيخ خليل | سايبر خليل</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- زر تبديل اللغة -->
-    <div class="language-switcher">
-        <button id="langSwitch" class="lang-btn" data-lang="en">
-            <i class="fas fa-globe"></i>
-            <span class="lang-text">English</span>
-        </button>
-    </div>
 
-    <!-- زر القائمة للموبايل -->
-    <div class="mobile-menu-btn">
-        <i class="fas fa-bars"></i>
-    </div>
-
-    <!-- القائمة المتنقلة -->
-    <nav class="mobile-nav">
-        <div class="mobile-nav-header">
-            <h3 data-key="menu.title">القائمة</h3>
-            <button class="close-nav"><i class="fas fa-times"></i></button>
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <div class="logo"><span>Cyber</span> Khalil</div>
+            <ul class="nav-links">
+                <li><a href="#hero" data-key="nav_home">الرئيسية</a></li>
+                <li><a href="#experience" data-key="nav_exp">الإنجازات</a></li>
+                <li><a href="#academy" data-key="nav_academy">الأكاديمية</a></li>
+                <li><a href="#youtube" data-key="nav_youtube">يوتيوب</a></li>
+                <li><button id="lang-toggle" class="lang-switch">English</button></li>
+            </ul>
         </div>
-        <ul class="mobile-nav-links">
-            <li><a href="#about" data-key="menu.profile"><i class="fas fa-user"></i> <span>الملف الشخصي</span></a></li>
-            <li><a href="#skills" data-key="menu.skills"><i class="fas fa-cogs"></i> <span>المهارات</span></a></li>
-            <li><a href="#achievements" data-key="menu.achievements"><i class="fas fa-trophy"></i>
-                    <span>الإنجازات</span></a></li>
-            <li><a href="#experience" data-key="menu.experience"><i class="fas fa-briefcase"></i>
-                    <span>الخبرات</span></a></li>
-            <li><a href="#projects" data-key="menu.projects"><i class="fas fa-code"></i> <span>المشاريع</span></a></li>
-            <li><a href="#youtube" data-key="menu.youtube"><i class="fab fa-youtube"></i> <span>اليوتيوب</span></a></li>
-            <li><a href="#contact" data-key="menu.contact"><i class="fas fa-envelope"></i> <span>التواصل</span></a></li>
-        </ul>
     </nav>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="avatar-section">
-                    <img src="avatar.png" alt="Mahmoud Khalil" class="avatar">
-                    <div class="header-text">
-                        <h1 data-key="header.name">محمود وليد خليل</h1>
-                        <h2 data-key="header.title">مهندس حاسوب وأمن سيبراني</h2>
-                        <div class="personal-info">
-                            <div class="info-item">
-                                <i class="fas fa-phone"></i>
-                                <span style="direction: ltr;">+970 597 980 398</span>
-                            </div>
-                            <div class="info-item">
-                                <i class="fas fa-envelope"></i>
-                                <span>khalil2535@proton.me</span>
-                            </div>
-                            <div class="info-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span data-key="header.location">غزة - فلسطين</span>
-                            </div>
-                        </div>
-                    </div>
+    <header id="hero" class="hero-section">
+        <div class="container hero-grid">
+            <div id="hero-content" class="hero-text">
+                <div class="badge" data-key="hero_badge">مرحباً بك في عالمي الرقمي</div>
+                <h1 data-key="hero_title">محمود الشيخ خليل</h1>
+                <h2 data-key="hero_subtitle">مهندس حاسوب وأمن سيبراني</h2>
+                <p data-key="hero_desc">خبير في إدارة الأنظمة والشبكات، ومحاضر تقني يسعى لنشر المعرفة الرقمية وحماية الفضاء السيبراني العربي.</p>
+                
+                <div class="social-hero">
+                    <a href="https://linkedin.com/in/cyberkhalil" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/cyberkhalil" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://t.me/cyber_khalil" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="https://facebook.com/cyberkhalil" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/cyber.khalil" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
 
-                <div class="quote">
-                    <h3 data-key="header.quotes">أقوال واقتباسات</h3>
-                    <p data-key="header.quote1">"توزيعة Arch Linux هي لوحةً فارغة أنت من ستقوم برسمها"</p>
-                    <p data-key="header.quote2">"الدنيا هم من لا هم له، اللهم لا هم إلا الآخرة."</p>
+                <div class="hero-btns">
+                    <a href="#academy" class="btn btn-primary" data-key="btn_academy">دخول الأكاديمية</a>
+                    <a href="https://youtube.com/@cyber.khalil" class="btn btn-outline" data-key="btn_youtube">قناة اليوتيوب</a>
                 </div>
             </div>
-
-            <div class="social-links">
-                <a href="https://linkedin.com/in/cyberkhalil" class="social-link" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://t.me/cyber_khalil" class="social-link" target="_blank">
-                    <i class="fab fa-telegram"></i>
-                </a>
-                <a href="https://github.com/cyberkhalil" class="social-link" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.youtube.com/@cyber.khalil" class="social-link" target="_blank">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="https://fb.com/cyberkhalil" class="social-link" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://twitter.com/khalil_cyber" class="social-link" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.instagram.com/cyber.khalil" class="social-link" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
+            <div class="hero-avatar">
+                <div class="avatar-glow"></div>
+                <img src="avatar.png" alt="Cyber Khalil">
             </div>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about">
+    <section id="experience" class="section">
         <div class="container">
-            <div class="section-title">
-                <h2 data-key="about.title">الملف الشخصي</h2>
+            <div class="section-header">
+                <h2 data-key="exp_title">المسيرة المهنية والتقنية</h2>
+                <div class="underline"></div>
             </div>
-            <div class="about-content">
-                <p data-key="about.content1">
-                    أنا مهندس حاسوب متخصص في أمن المعلومات مع سنوات من الخبرة في تطوير البرمجيات وإدارة قواعد البيانات
-                    والسيرفرات. تخرجت بدرجة بكالوريوس في هندسة أمن المعلومات بتقدير جيد جداً من الكلية
-                    الجامعية للعلوم التطبيقية في غزة.
-                </p>
-                <p data-key="about.content2">
-                    <strong>🐧 بالمناسبة، أستخدم Arch Linux كنظام تشغيل أساسي.</strong>أستمتع بتخصيص بيئة العمل لأقصى
-                    حد. <strong>😊 أنا مهتم بتعلم المهارات الجديدة باستمرار</strong>، وأعتقد أن الفضول هو المحرك الحقيقي
-                    للتطور في مجال التكنولوجيا. <strong>⚡ أحب البرمجة، خاصة على بيئة Linux</strong>، حيث أجد حرية ومرونة
-                    لا تضاهى في تحويل الأفكار إلى واقع.
-                </p>
-                <p data-key="about.content3">
-                    أمتلك خبرة عملية واسعة في إدارة قواعد البيانات (Oracle, MySQL, SQL Server)، وإدارة سيرفرات Windows
-                    وLinux، وتطوير البرمجيات بلغات متعددة (Java, Python, C#). كما أمتلك قناة يوتيوب تعليمية
-                    (@cyber.khalil) أشارك فيها معرفتي التقنية مع أكثر من 1.7 ألف مشترك.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section-bg">
-        <div class="container">
-            <div class="section-title">
-                <h2 data-key="skills.title">المهارات التقنية</h2>
-            </div>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> <span data-key="skills.db">قواعد البيانات</span></h3>
-                    <div class="skill-item">
-                        <span class="skill-name">Oracle DBMS</span>
-                        <div class="skill-level">
-                            <div class="skill-fill" style="width: 95%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">MySQL / SQL Server</span>
-                        <div class="skill-level">
-                            <div class="skill-fill" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">PL/SQL Programming</span>
-                        <div class="skill-level">
-                            <div class="skill-fill" style="width: 92%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Database Security</span>
-                        <div class="skill-level">
-                            <div class="skill-fill" style="width: 88%"></div>
-                        </div>
-                    </div>
+            <div class="exp-grid">
+                <div class="exp-card">
+                    <div class="card-icon"><i class="fas fa-university"></i></div>
+                    <h3 data-key="exp_job1">محاضر مساعد - UCAS</h3>
+                    <p data-key="exp_job1_desc">تدريس مساقات أنظمة التشغيل وأمن الشبكات، والبرمجة.</p>
                 </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> <span data-key="skills.server">إدارة السيرفرات</span></h3>
-                    <div class="skill-item">
-                        <span class="skill-name">Windows Server</span>
-                        <div class="skill-level">
-                            <div class="skill-fill" style="width: 94%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Linux (CentOS, Ubuntu)</span>
-                        <div class="skill-level">
-                            <div class="skill-fill" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Active Directory</span>
-                        <div class="skill-level">
-                            <div class="skill-fill" style="width: 92%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">PowerShell Scripting</span>
-                        <div class="skill-level">
-                            <div class="skill-fill" style="width: 93%"></div>
-                        </div>
-                    </div>
+                <div class="exp-card">
+                    <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3 data-key="exp_job2">إدارة الشبكات - وزارة الاتصالات</h3>
+                    <p data-key="exp_job2_desc">خبرة عمل في إدارة الأنظمة والشبكات الحكومية (تدريب ميداني).</p>
                 </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> <span data-key="skills.programming">البرمجة والتطوير</span></h3>
-                    <div class="skill-item">
-                        <span class="skill-name">Java</span>
-                        <div class="skill-level">
-                            <div class="skill-fill" style="width: 95%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Python</span>
-                        <div class="skill-level">
-                            <div class="skill-fill" style="width: 88%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">C# / ASP.NET</span>
-                        <div class="skill-level">
-                            <div class="skill-fill" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Web Development</span>
-                        <div class="skill-level">
-                            <div class="skill-fill" style="width: 82%"></div>
-                        </div>
-                    </div>
+                <div class="exp-card">
+                    <div class="card-icon"><i class="fas fa-medal"></i></div>
+                    <h3 data-key="exp_award">التميز الأكاديمي</h3>
+                    <p data-key="exp_award_desc">حاصل على لقب "أفضل طالب" لعدة فصول وجائزة Everest للأنظمة.</p>
                 </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-shield-alt"></i> <span data-key="skills.cyber">الأمن السيبراني</span></h3>
-                    <div class="skill-item">
-                        <span class="skill-name">Cryptography</span>
-                        <div class="skill-level">
-                            <div class="skill-fill" style="width: 87%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Network Security</span>
-                        <div class="skill-level">
-                            <div class="skill-fill" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">OS Security</span>
-                        <div class="skill-level">
-                            <div class="skill-fill" style="width: 91%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Security Auditing</span>
-                        <div class="skill-level">
-                            <div class="skill-fill" style="width: 86%"></div>
-                        </div>
-                    </div>
+                <div class="exp-card">
+                    <div class="card-icon"><i class="fab fa-linux"></i></div>
+                    <h3 data-key="exp_linux">إدارة أنظمة Linux</h3>
+                    <p data-key="exp_linux_desc">بناء وإدارة بيئات عمل تعتمد على Arch Linux وتخصيصها للأمن السيبراني.</p>
+                </div>
+                <div class="exp-card">
+                    <div class="card-icon"><i class="fas fa-video"></i></div>
+                    <h3 data-key="exp_content">صناعة المحتوى التقني</h3>
+                    <p data-key="exp_content_desc">تأسيس منصة "سايبر خليل" التعليمية وتقديم شروحات متقدمة في الأمن الرقمي.</p>
+                </div>
+                <div class="exp-card">
+                    <div class="card-icon"><i class="fas fa-user-shield"></i></div>
+                    <h3 data-key="exp_community">إدارة المجتمعات التقنية</h3>
+                    <p data-key="exp_community_desc">قيادة تجمع "سايبر خليل" على تليجرام لتقديم الدعم التقني للطلاب.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Achievements Timeline Section -->
-    <section id="achievements">
+    <section id="academy" class="section bg-dark-alt">
         <div class="container">
-            <div class="section-title">
-                <h2 data-key="achievements.title">الإنجازات والتاريخ المهني</h2>
-            </div>
-
-            <!-- View Toggle -->
-            <div class="view-toggle-container">
-                <button class="view-toggle-btn active" data-view="horizontal">
-                    <i class="fas fa-chart-bar"></i> <span data-key="achievements.view1">عرض الخريطة الزمنية</span>
-                </button>
-                <button class="view-toggle-btn" data-view="vertical">
-                    <i class="fas fa-list-alt"></i> <span data-key="achievements.view2">عرض القائمة الزمنية</span>
-                </button>
-            </div>
-
-            <!-- Horizontal Timeline View (Default) -->
-            <div class="timeline-view horizontal-view active">
-                <!-- Timeline Navigation -->
-                <div class="timeline-navigation">
-                    <button class="nav-btn" id="zoomIn">
-                        <i class="fas fa-search-plus"></i> <span data-key="achievements.zoomIn">تكبير</span>
-                    </button>
-                    <button class="nav-btn" id="zoomOut">
-                        <i class="fas fa-search-minus"></i> <span data-key="achievements.zoomOut">تصغير</span>
-                    </button>
-                    <div class="time-range">
-                        <span class="start-year">2015</span>
-                        <i class="fas fa-arrows-alt-h"></i>
-                        <span class="end-year">2025</span>
-                    </div>
+            <div class="academy-banner">
+                <div class="academy-content">
+                    <h2 data-key="academy_title">أكاديمية سايبر خليل</h2>
+                    <p data-key="academy_desc">مركز المحاضرات والمواد العلمية لطلاب هندسة أمن المعلومات.</p>
+                    <a href="https://cyberkhalil.github.io/Academy" target="_blank" class="btn btn-primary" data-key="academy_go">تصفح المنصة الآن</a>
                 </div>
-
-                <!-- Horizontal Timeline Container -->
-                <div class="timeline-horizontal-container">
-                    <!-- Timeline Axis -->
-                    <div class="timeline-axis">
-                        <div class="axis-line"></div>
-                        <!-- Years Markers -->
-                        <div class="year-marker" style="left: 0%;">2015</div>
-                        <div class="year-marker" style="left: 10%;">2016</div>
-                        <div class="year-marker" style="left: 20%;">2017</div>
-                        <div class="year-marker" style="left: 30%;">2018</div>
-                        <div class="year-marker" style="left: 40%;">2019</div>
-                        <div class="year-marker" style="left: 50%;">2020</div>
-                        <div class="year-marker" style="left: 60%;">2021</div>
-                        <div class="year-marker" style="left: 70%;">2022</div>
-                        <div class="year-marker" style="left: 80%;">2023</div>
-                        <div class="year-marker" style="left: 90%;">2024</div>
-                        <div class="year-marker" style="left: 100%;">2025</div>
-                    </div>
-
-                    <!-- Events Container with Dynamic Rows -->
-                    <div class="timeline-events-rows">
-                        <!-- Row 1 - Education -->
-                        <div class="timeline-row">
-                            <div class="row-label" data-key="timeline.education">التعليم</div>
-                            <div class="row-events">
-                                <div class="event-item education" style="left: 30%; width: 30%;" data-start="2017-09"
-                                    data-end="2021-06">
-                                    <div class="event-bar"></div>
-                                    <div class="event-popup">
-                                        <h4><i class="fas fa-graduation-cap"></i> <span
-                                                data-key="timeline.bachelor">بكالوريوس هندسة أمن المعلومات</span></h4>
-                                        <p class="event-duration">سبتمبر 2017 - يونيو 2021</p>
-                                        <p class="event-details">الكلية الجامعية للعلوم التطبيقية (UCAS)</p>
-                                        <p class="event-details">معدل 89.23% | 174 ساعة</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="timeline-row">
-                            <div class="row-label" data-key="timeline.employment">التوظيف</div>
-                            <div class="row-events">
-                                <!-- Employment 1 -->
-                                <div class="event-item employment" style="left: 60%; width: 30%;" data-start="2021-09"
-                                    data-end="2026-01">
-                                    <div class="event-bar"></div>
-                                    <div class="event-popup">
-                                        <h4><i class="fas fa-briefcase"></i> <span data-key="timeline.ta">مساعد
-                                                تدريس</span></h4>
-                                        <p class="event-duration">سبتمبر 2021 - الحاضر</p>
-                                        <p class="event-details">الكلية الجامعية للعلوم التطبيقية</p>
-                                        <p class="event-details">5 مساقات | +200 طالب</p>
-                                    </div>
-                                </div>
-
-                                <!-- Employment 2 -->
-                                <div class="event-item employment" style="left: 72%; width: 6%;" data-start="2022-02"
-                                    data-end="2022-07">
-                                    <div class="event-bar"></div>
-                                    <div class="event-popup">
-                                        <h4><i class="fas fa-network-wired"></i> <span data-key="timeline.network">مهندس
-                                                شبكات ومواقع</span></h4>
-                                        <p class="event-duration">فبراير 2022 - يوليو 2022</p>
-                                        <p class="event-details">شركة غزة لايف باور</p>
-                                        <p class="event-details">إدارة البنية التحتية للشبكات والمواقع</p>
-                                    </div>
-                                </div>
-
-                                <!-- Employment 3 -->
-                                <div class="event-item employment" style="left: 42%; width: 8%;" data-start="2019-05"
-                                    data-end="2019-12">
-                                    <div class="event-bar"></div>
-                                    <div class="event-popup">
-                                        <h4><i class="fas fa-laptop-code"></i> <span data-key="timeline.software">مهندس
-                                                برمجيات</span></h4>
-                                        <p class="event-duration">مايو 2019 - ديسمبر 2019</p>
-                                        <p class="event-details">روضة الإبداع</p>
-                                        <p class="event-details">تطوير حلول برمجية متكاملة لإدارة بيانات الروضة، وتصميم
-                                            نظام متكامل يدعم تصدير واستيراد بيانات Excel</p>
-                                        <a href="https://github.com/cyberkhalil/Roda" target="_blank"
-                                            style="color: var(--secondary); text-decoration: none; font-size: 0.85rem; margin-top: 5px; display: inline-block;">
-                                            <i class="fas fa-external-link-alt"></i> <span
-                                                data-key="timeline.viewProject">عرض المشروع على GitHub</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Row 3 - Certifications -->
-                        <div class="timeline-row">
-                            <div class="row-label" data-key="timeline.certifications">الشهادات والدورات</div>
-                            <div class="row-events">
-                                <div class="event-item certification" style="left: 45%; width: 2%;"
-                                    data-date="2019-03-01">
-                                    <div class="event-dot"></div>
-                                    <div class="event-popup">
-                                        <h4><i class="fas fa-certificate"></i> <span data-key="timeline.oracle">شهادة
-                                                Oracle Academy</span></h4>
-                                        <p class="event-duration">مارس 2019</p>
-                                        <p class="event-details">Database Programming with PL/SQL</p>
-                                    </div>
-                                </div>
-
-                                <div class="event-item certification" style="left: 8%; width: 6%;" data-start="2016-10"
-                                    data-end="2016-11">
-                                    <div class="event-bar"></div>
-                                    <div class="event-popup">
-                                        <h4><i class="fas fa-certificate"></i> <span data-key="timeline.java">دورة Java
-                                                2 SE</span></h4>
-                                        <p class="event-duration">أكتوبر 2016 - نوفمبر 2016</p>
-                                        <p class="event-details">VISION Plus</p>
-                                        <p class="event-details">50 ساعة تدريبية</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Row 4 - Awards -->
-                        <div class="timeline-row">
-                            <div class="row-label" data-key="timeline.awards">الجوائز والتكريمات</div>
-                            <div class="row-events">
-                                <!-- 2018 Awards -->
-                                <div class="event-item award" style="left: 35%;" data-date="2018-03">
-                                    <div class="event-dot"></div>
-                                    <div class="event-popup">
-                                        <h4><i class="fas fa-trophy"></i> Hash code - Google</h4>
-                                        <p class="event-duration">مارس 2018</p>
-                                        <p class="event-details">مسابقة برمجية عالمية</p>
-                                    </div>
-                                </div>
-
-                                <div class="event-item award" style="left: 32%;" data-date="2018-02">
-                                    <div class="event-dot"></div>
-                                    <div class="event-popup">
-                                        <h4><i class="fas fa-award"></i> <span data-key="timeline.bestStudent">أفضل
-                                                الطلاب - UCAS</span></h4>
-                                        <p class="event-duration">فبراير 2018</p>
-                                    </div>
-                                </div>
-
-                                <div class="event-item award" style="left: 38%;" data-date="2018-09">
-                                    <div class="event-dot"></div>
-                                    <div class="event-popup">
-                                        <h4><i class="fas fa-award"></i> <span data-key="timeline.bestStudent">أفضل
-                                                الطلاب - UCAS</span></h4>
-                                        <p class="event-duration">سبتمبر 2018</p>
-                                    </div>
-                                </div>
-
-                                <!-- 2017 Awards -->
-                                <div class="event-item award" style="left: 22%;" data-date="2017-02">
-                                    <div class="event-dot"></div>
-                                    <div class="event-popup">
-                                        <h4><i class="fas fa-award"></i> <span data-key="timeline.bestStudent">أفضل
-                                                الطلاب - UCAS</span></h4>
-                                        <p class="event-duration">فبراير 2017</p>
-                                    </div>
-                                </div>
-
-                                <div class="event-item award" style="left: 28%;" data-date="2017-09">
-                                    <div class="event-dot"></div>
-                                    <div class="event-popup">
-                                        <h4><i class="fas fa-award"></i> <span data-key="timeline.bestStudent">أفضل
-                                                الطلاب - UCAS</span></h4>
-                                        <p class="event-duration">سبتمبر 2017</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Vertical Timeline View (Hidden by Default) -->
-            <div class="timeline-view vertical-view">
-                <div class="vertical-timeline">
-                    <!-- 2021 - Now -->
-                    <div class="vertical-year-group">
-                        <h3 class="year-header">2021 - <span data-key="timeline.now">الآن</span></h3>
-                        <div class="year-events">
-                            <div class="vertical-event employment">
-                                <div class="event-date">
-                                    <span class="start-date">سبتمبر 2021</span>
-                                    <i class="fas fa-arrow-left"></i>
-                                    <span class="end-date current" data-key="timeline.present">الحاضر</span>
-                                </div>
-                                <div class="event-content">
-                                    <h4><i class="fas fa-briefcase"></i> <span data-key="timeline.ta">مساعد تدريس</span>
-                                    </h4>
-                                    <p class="event-institution">الكلية الجامعية للعلوم التطبيقية</p>
-                                    <div class="event-details">
-                                        <p data-key="timeline.taDetails">تدريس مساقات أنظمة التشغيل، برمجة Java،
-                                            الشبكات، مقدمة في الحوسبة، وأخلاقيات الحاسوب</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 2022 -->
-                    <div class="vertical-year-group">
-                        <h3 class="year-header">2022</h3>
-                        <div class="year-events">
-                            <div class="vertical-event employment">
-                                <div class="event-date">
-                                    <span class="start-date">فبراير 2022</span>
-                                    <i class="fas fa-arrow-left"></i>
-                                    <span class="end-date">يوليو 2022</span>
-                                </div>
-                                <div class="event-content">
-                                    <h4><i class="fas fa-network-wired"></i> <span data-key="timeline.network">مهندس
-                                            شبكات ومواقع إلكترونية</span></h4>
-                                    <p class="event-institution">شركة غزة لايف باور</p>
-                                    <div class="event-details">
-                                        <p data-key="timeline.networkDetails">إدارة البنية التحتية للشبكات والمواقع
-                                            الإلكترونية للشركة، وصيانة السيرفرات، وضمان استمرارية الخدمات التقنية</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 2021 -->
-                    <div class="vertical-year-group">
-                        <h3 class="year-header">2021</h3>
-                        <div class="year-events">
-                            <div class="vertical-event education">
-                                <div class="event-date">
-                                    <span class="single-date">يونيو 2021</span>
-                                </div>
-                                <div class="event-content">
-                                    <h4><i class="fas fa-graduation-cap"></i> <span
-                                            data-key="timeline.bachelor">بكالوريوس هندسة أمن المعلومات</span></h4>
-                                    <p class="event-institution">الكلية الجامعية للعلوم التطبيقية (UCAS)</p>
-                                    <div class="event-details">
-                                        <p data-key="timeline.grade">التقدير: جيد جدًا (ممتاز) - المعدل: 89.23%</p>
-                                        <p data-key="timeline.hours">إجمالي الساعات: 174 ساعة | ساعات التطوع: 140 ساعة
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 2019 -->
-                    <div class="vertical-year-group">
-                        <h3 class="year-header">2019</h3>
-                        <div class="year-events">
-                            <div class="vertical-event employment">
-                                <div class="event-date">
-                                    <span class="start-date">مايو 2019</span>
-                                    <i class="fas fa-arrow-left"></i>
-                                    <span class="end-date">ديسمبر 2019</span>
-                                </div>
-                                <div class="event-content">
-                                    <h4><i class="fas fa-laptop-code"></i> <span data-key="timeline.software">مهندس
-                                            برمجيات</span></h4>
-                                    <p class="event-institution">روضة الإبداع</p>
-                                    <div class="event-details">
-                                        <p data-key="timeline.softwareDetails">تطوير حلول برمجية متكاملة لإدارة بيانات
-                                            الروضة، وتصميم نظام متكامل يدعم تصدير واستيراد بيانات Excel</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="vertical-event certification">
-                                <div class="event-date">
-                                    <span class="single-date">مارس 2019</span>
-                                </div>
-                                <div class="event-content">
-                                    <h4><i class="fas fa-certificate"></i> <span data-key="timeline.oracle">شهادة Oracle
-                                            Academy</span></h4>
-                                    <p class="event-institution">Database Programming with PL/SQL</p>
-                                    <div class="event-details">
-                                        <a href="https://bit.ly/3B0W9IT" target="_blank"
-                                            data-key="timeline.viewCert">عرض الشهادة</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 2018 -->
-                    <div class="vertical-year-group">
-                        <h3 class="year-header">2018</h3>
-                        <div class="year-events">
-                            <div class="vertical-event award">
-                                <div class="event-date">
-                                    <span class="single-date">مارس 2018</span>
-                                </div>
-                                <div class="event-content">
-                                    <h4><i class="fas fa-trophy"></i> Hash code - Google</h4>
-                                    <p class="event-institution" data-key="timeline.competition">مسابقة برمجية عالمية
-                                    </p>
-                                    <div class="event-details">
-                                        <p data-key="timeline.hashcode">شاركت في مسابقة Hash Code السنوية التي تنظمها
-                                            Google</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="vertical-event award">
-                                <div class="event-date">
-                                    <span class="single-date">فبراير 2018</span>
-                                </div>
-                                <div class="event-content">
-                                    <h4><i class="fas fa-award"></i> <span data-key="timeline.bestStudent">أفضل الطلاب -
-                                            UCAS</span></h4>
-                                    <p class="event-institution">الكلية الجامعية للعلوم التطبيقية</p>
-                                    <div class="event-details">
-                                        <p data-key="timeline.honor">تم تكريمي كواحد من أفضل الطلاب للفصل الدراسي</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="vertical-event award">
-                                <div class="event-date">
-                                    <span class="single-date">سبتمبر 2018</span>
-                                </div>
-                                <div class="event-content">
-                                    <h4><i class="fas fa-award"></i> <span data-key="timeline.bestStudent">أفضل الطلاب -
-                                            UCAS</span></h4>
-                                    <p class="event-institution">الكلية الجامعية للعلوم التطبيقية</p>
-                                    <div class="event-details">
-                                        <p data-key="timeline.honor">تم تكريمي كواحد من أفضل الطلاب للفصل الدراسي</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 2017 -->
-                    <div class="vertical-year-group">
-                        <h3 class="year-header">2017</h3>
-                        <div class="year-events">
-                            <div class="vertical-event education">
-                                <div class="event-date">
-                                    <span class="start-date">سبتمبر 2017</span>
-                                    <i class="fas fa-arrow-left"></i>
-                                    <span class="end-date">يونيو 2021</span>
-                                </div>
-                                <div class="event-content">
-                                    <h4><i class="fas fa-graduation-cap"></i> <span
-                                            data-key="timeline.bachelor">بكالوريوس هندسة أمن المعلومات</span></h4>
-                                    <p class="event-institution">الكلية الجامعية للعلوم التطبيقية (UCAS)</p>
-                                    <div class="event-details">
-                                        <p data-key="timeline.startStudy">بداية الدراسة الجامعية</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="vertical-event award">
-                                <div class="event-date">
-                                    <span class="single-date">فبراير 2017</span>
-                                </div>
-                                <div class="event-content">
-                                    <h4><i class="fas fa-award"></i> <span data-key="timeline.bestStudent">أفضل الطلاب -
-                                            UCAS</span></h4>
-                                    <p class="event-institution">الكلية الجامعية للعلوم التطبيقية</p>
-                                    <div class="event-details">
-                                        <p data-key="timeline.honor">تم تكريمي كواحد من أفضل الطلاب للفصل الدراسي</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="vertical-event award">
-                                <div class="event-date">
-                                    <span class="single-date">سبتمبر 2017</span>
-                                </div>
-                                <div class="event-content">
-                                    <h4><i class="fas fa-award"></i> <span data-key="timeline.bestStudent">أفضل الطلاب -
-                                            UCAS</span></h4>
-                                    <p class="event-institution">الكلية الجامعية للعلوم التطبيقية</p>
-                                    <div class="event-details">
-                                        <p data-key="timeline.honor">تم تكريمي كواحد من أفضل الطلاب للفصل الدراسي</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 2016 -->
-                    <div class="vertical-year-group">
-                        <h3 class="year-header">2016</h3>
-                        <div class="year-events">
-                            <div class="vertical-event certification">
-                                <div class="event-date">
-                                    <span class="start-date">أكتوبر 2016</span>
-                                    <i class="fas fa-arrow-left"></i>
-                                    <span class="end-date">نوفمبر 2016</span>
-                                </div>
-                                <div class="event-content">
-                                    <h4><i class="fas fa-certificate"></i> <span data-key="timeline.java">دورة Java 2 SE
-                                            Programming</span></h4>
-                                    <p class="event-institution">VISION Plus</p>
-                                    <div class="event-details">
-                                        <p data-key="timeline.hoursCount">عدد الساعات: 50 ساعة</p>
-                                        <p data-key="timeline.completionDate">تاريخ الإنجاز: 26 نوفمبر 2016</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="academy-icon">
+                    <i class="fas fa-graduation-cap"></i>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section-bg">
+    <section id="youtube" class="section">
         <div class="container">
-            <div class="section-title">
-                <h2 data-key="experience.title">الخبرات العملية</h2>
+            <div class="section-header">
+                <h2 data-key="youtube_title">آخر الدروس التعليمية</h2>
+                <div class="underline"></div>
             </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 data-key="timeline.ta">مساعد تدريس</h3>
-                        <p class="project-tech">UCAS | سبتمبر 2021 - <span data-key="timeline.present">الحاضر</span></p>
-                    </div>
-                    <div class="project-body">
-                        <p data-key="timeline.taDetails">تدريس مساقات أنظمة التشغيل، برمجة Java، الشبكات، مقدمة في
-                            الحوسبة، وأخلاقيات الحاسوب في الكلية الجامعية للعلوم التطبيقية.</p>
-                        <div class="project-stats">
-                            <div class="stat">
-                                <i class="fas fa-chalkboard-teacher"></i>
-                                <div data-key="experience.courses">5 مساقات</div>
-                            </div>
-                            <div class="stat">
-                                <i class="fas fa-users"></i>
-                                <div data-key="experience.students">+200 طالب</div>
-                            </div>
-                        </div>
-                    </div>
+            <div id="youtube-container" class="videos-grid">
                 </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 data-key="timeline.network">مهندس شبكات ومواقع إلكترونية</h3>
-                        <p class="project-tech">شركة غزة لايف باور | فبراير 2022 - يوليو 2022</p>
-                    </div>
-                    <div class="project-body">
-                        <p data-key="timeline.networkDetails">إدارة البنية التحتية للشبكات والمواقع الإلكترونية للشركة،
-                            وصيانة السيرفرات، وضمان استمرارية الخدمات التقنية.</p>
-                        <div class="project-stats">
-                            <div class="stat">
-                                <i class="fas fa-network-wired"></i>
-                                <div data-key="experience.networkManagement">إدارة شبكات</div>
-                            </div>
-                            <div class="stat">
-                                <i class="fas fa-server"></i>
-                                <div data-key="experience.serverManagement">إدارة سيرفرات</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 data-key="timeline.software">مهندس برمجيات</h3>
-                        <p class="project-tech">روضة الإبداع | مايو 2019 - ديسمبر 2019</p>
-                    </div>
-                    <div class="project-body">
-                        <p data-key="timeline.softwareDetails">تطوير حلول برمجية متكاملة لإدارة بيانات الروضة، وتصميم
-                            نظام متكامل يدعم تصدير واستيراد بيانات Excel.</p>
-                        <div class="project-stats">
-                            <div class="stat">
-                                <i class="fas fa-laptop-code"></i>
-                                <div data-key="experience.softwareDev">تطوير برمجيات</div>
-                            </div>
-                            <div class="stat">
-                                <i class="fas fa-database"></i>
-                                <div data-key="experience.dataManagement">إدارة بيانات</div>
-                            </div>
-                        </div>
-                        <a href="https://github.com/cyberkhalil/Roda" class="project-link" target="_blank"
-                            data-key="timeline.viewProject">عرض المشروع على GitHub</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
+    <footer class="main-footer">
         <div class="container">
-            <div class="section-title">
-                <h2 data-key="projects.title">أبرز المشاريع</h2>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>University Management Database</h3>
-                        <p class="project-tech">Oracle PL/SQL</p>
-                    </div>
-                    <div class="project-body">
-                        <p data-key="projects.dbDesc">تصميم وإدارة قاعدة بيانات جامعية متكاملة باستخدام Oracle DBMS تدعم
-                            إدارة الطلاب والمدرسين والموظفين.</p>
-                        <div class="project-stats">
-                            <div class="stat">
-                                <i class="fas fa-star"></i>
-                                <div data-key="projects.stars">6 نجوم</div>
-                            </div>
-                            <div class="stat">
-                                <i class="fas fa-code-branch"></i>
-                                <div>343 commit</div>
-                            </div>
-                        </div>
-                        <a href="https://github.com/cyberkhalil/University_Data_Base" class="project-link"
-                            target="_blank" data-key="projects.viewProject">عرض المشروع</a>
-                    </div>
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3><span>Cyber</span> Khalil</h3>
+                    <p data-key="footer_desc">نحو فضاء سيبراني تعليمي متميز.</p>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Windows Server PS Scripts</h3>
-                        <p class="project-tech">PowerShell</p>
-                    </div>
-                    <div class="project-body">
-                        <p data-key="projects.psDesc">سكربتات PowerShell لأتمتة إعداد Active Directory وخدمات Windows
-                            Server (DNS, DHCP, File Sharing).</p>
-                        <div class="project-stats">
-                            <div class="stat">
-                                <i class="fas fa-star"></i>
-                                <div data-key="projects.stars">4 نجوم</div>
-                            </div>
-                            <div class="stat">
-                                <i class="fas fa-code-branch"></i>
-                                <div>18 commit</div>
-                            </div>
-                        </div>
-                        <a href="https://github.com/cyberkhalil/Windows-Server-PS-Scripts" class="project-link"
-                            target="_blank" data-key="projects.viewProject">عرض المشروع</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Oracle Database II Project</h3>
-                        <p class="project-tech">Java + Oracle</p>
-                    </div>
-                    <div class="project-body">
-                        <p data-key="projects.javaDesc">تطبيق Java مع واجهة مستخدم لإدارة قاعدة بيانات Oracle، مع دعم
-                            إجراءات PL/SQL والمشغلات.</p>
-                        <div class="project-stats">
-                            <div class="stat">
-                                <i class="fas fa-star"></i>
-                                <div data-key="projects.stars">4 نجوم</div>
-                            </div>
-                            <div class="stat">
-                                <i class="fas fa-code-branch"></i>
-                                <div>108 commit</div>
-                            </div>
-                        </div>
-                        <a href="https://github.com/cyberkhalil/Oracle-DB-II" class="project-link" target="_blank"
-                            data-key="projects.viewProject">عرض المشروع</a>
-                    </div>
+                <div class="footer-links">
+                    <a href="mailto:khalil2535@proton.me"><i class="fas fa-envelope"></i></a>
+                    <a href="https://youtube.com/@cyber.khalil" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://linkedin.com/in/cyberkhalil" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/cyberkhalil" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://t.me/cyber_khalil" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="https://facebook.com/cyberkhalil" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/cyber.khalil" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-
-            <div class="center-button">
-                <a href="https://github.com/cyberkhalil?tab=repositories" class="btn" target="_blank"
-                    data-key="projects.all">عرض جميع المشاريع على GitHub (46 مستودع)</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- YouTube Section -->
-    <section id="youtube" class="section-bg">
-        <div class="container">
-            <div class="section-title">
-                <h2 data-key="youtube.title">قناة YouTube التعليمية</h2>
-            </div>
-
-            <div class="youtube-stats">
-                <div class="stat-card">
-                    <i class="fab fa-youtube"></i>
-                    <div class="stat-number">1.7K+</div>
-                    <div class="stat-label" data-key="youtube.subscribers">مشترك</div>
-                </div>
-
-                <div class="stat-card">
-                    <i class="fas fa-eye"></i>
-                    <div class="stat-number">57K+</div>
-                    <div class="stat-label" data-key="youtube.views">مشاهدة (آخر سنة)</div>
-                </div>
-
-                <div class="stat-card">
-                    <i class="fas fa-clock"></i>
-                    <div class="stat-number">3.2K+</div>
-                    <div class="stat-label" data-key="youtube.hours">ساعة مشاهدة</div>
-                </div>
-
-                <div class="stat-card">
-                    <i class="fas fa-video"></i>
-                    <div class="stat-number">145+</div>
-                    <div class="stat-label" data-key="youtube.videos">فيديو</div>
-                </div>
-            </div>
-
-            <div class="youtube-content">
-                <h3 data-key="youtube.top">أبرز الفيديوهات التعليمية</h3>
-                <div class="videos-grid">
-                    <div class="video-item">
-                        <h4 data-key="youtube.video1">مشاركة الملفات مع التحكم في الصلاحيات</h4>
-                        <p data-key="youtube.duration">مدة الفيديو: 13:28 | المشاهدات: 5,174</p>
-                    </div>
-                    <div class="video-item">
-                        <h4 data-key="youtube.video2">شرح التعامل مع DNS على Windows Server 2022</h4>
-                        <p data-key="youtube.duration">مدة الفيديو: 13:45 | المشاهدات: 4,021</p>
-                    </div>
-                    <div class="video-item">
-                        <h4 data-key="youtube.video3">شرح تثبيت وتفعيل DHCP على Windows Server 2022</h4>
-                        <p data-key="youtube.duration">مدة الفيديو: 15:45 | المشاهدات: 3,401</p>
-                    </div>
-                </div>
-                <div class="center-button">
-                    <a href="https://www.youtube.com/@cyber.khalil" class="btn youtube-btn" target="_blank">
-                        <i class="fab fa-youtube"></i> <span data-key="youtube.visit">زيارة القناة</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2 data-key="contact.title">التواصل معي</h2>
-            </div>
-
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3 data-key="contact.info">معلومات التواصل</h3>
-                    <div class="contact-details">
-                        <div class="info-item">
-                            <i class="fas fa-envelope fa-2x"></i>
-                            <div>
-                                <h4 data-key="contact.email">البريد الإلكتروني</h4>
-                                <p>khalil2535@proton.me</p>
-                            </div>
-                        </div>
-
-                        <div class="info-item">
-                            <i class="fas fa-phone fa-2x"></i>
-                            <div>
-                                <h4 data-key="contact.phone">رقم الهاتف</h4>
-                                <p class="ltr-direction">+970 597 980 398</p>
-                            </div>
-                        </div>
-
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt fa-2x"></i>
-                            <div>
-                                <h4 data-key="contact.address">العنوان</h4>
-                                <p data-key="header.location">غزة - فلسطين</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="social-section">
-                        <h3 data-key="contact.social">متابعيني على وسائل التواصل</h3>
-                        <div class="social-links">
-                            <a href="https://linkedin.com/in/cyberkhalil" class="social-link" target="_blank"
-                                title="+60 متابع">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://t.me/cyber_khalil" class="social-link" target="_blank" title="+700 متابع">
-                                <i class="fab fa-telegram"></i>
-                            </a>
-                            <a href="https://github.com/cyberkhalil" class="social-link" target="_blank"
-                                title="+40 متابع">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://www.youtube.com/@cyber.khalil" class="social-link" target="_blank"
-                                title="1.7 ألف مشترك">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <a href="https://fb.com/cyberkhalil" class="social-link" target="_blank" title="+600 متابع">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                            <a href="https://twitter.com/khalil_cyber" class="social-link" target="_blank"
-                                title="+140 متابع">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-form">
-                    <h3 data-key="contact.send">أرسل لي رسالة</h3>
-                    <div class="telegram-contact">
-                        <div class="telegram-info">
-                            <i class="fab fa-telegram fa-3x"></i>
-                            <h4 data-key="contact.telegramTitle">تواصل عبر Telegram</h4>
-                            <p data-key="contact.telegramDesc">يمكنك إرسال رسالة مباشرة إلى حسابي على Telegram. اضغط على
-                                الزر أدناه لبدء المحادثة.</p>
-                        </div>
-                        <a href="https://t.me/cyberkhalil" class="btn telegram-btn" target="_blank">
-                            <i class="fab fa-telegram"></i>
-                            <span data-key="contact.telegramButton">إرسال رسالة على Telegram</span>
-                        </a>
-                        <p class="telegram-note" data-key="contact.telegramNote">سيتم فتح تطبيق Telegram أو الموقع
-                            الرسمي. تأكد من تثبيت Telegram على جهازك.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div>
-                    <h3 data-key="header.name">محمود وليد خليل</h3>
-                    <p data-key="footer.tagline">مهندس حاسوب وأمن سيبراني | معلم تقني | مطور برمجيات</p>
-                </div>
-
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/cyberkhalil" class="social-link" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/cyberkhalil" class="social-link" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@cyber.khalil" class="social-link" target="_blank">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="copyright">
-                <p data-key="footer.copyright">© 2026 سايبر خليل - جميع الحقوق محفوظة.</p>
+            <div class="footer-bottom">
+                <p data-key="footer_copy">© 2026 جميع الحقوق محفوظة لـ محمود الشيخ خليل</p>
             </div>
         </div>
     </footer>
 
-    <!-- رابط ملف JavaScript -->
     <script src="script.js"></script>
 </body>
-
 </html>
