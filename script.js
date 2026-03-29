@@ -2,8 +2,8 @@ const translations = {
     ar: {
         nav_home: "الرئيسية", nav_exp: "الإنجازات", nav_academy: "الأكاديمية", nav_youtube: "يوتيوب",
         hero_badge: "مرحباً بك في عالمي الرقمي",
-        hero_title: "محمود الشيخ خليل", hero_subtitle: "مهندس حاسوب وأمن سيبراني",
-        hero_desc: "خبير في إدارة الأنظمة والشبكات، ومحاضر تقني يسعى لنشر المعرفة الرقمية وحماية الفضاء السيبراني العربي.",
+        hero_title: "محمود الشيخ خليل", hero_subtitle: "مهندس أمن سيبراني",
+        hero_desc: "خبير في إدارة الأنظمة والشبكات، ومحاضر تقني يسعى لنشر المعرفة الرقمية وحماية الفضاء السيبراني.",
         btn_academy: "دخول الأكاديمية", btn_youtube: "قناة اليوتيوب",
         exp_title: "المسيرة المهنية والتقنية",
         exp_job1: "محاضر مساعد - UCAS", exp_job1_desc: "تدريس مساقات أنظمة التشغيل وأمن الشبكات، والبرمجة.",
@@ -19,7 +19,7 @@ const translations = {
     en: {
         nav_home: "Home", nav_exp: "Portfolio", nav_academy: "Academy", nav_youtube: "YouTube",
         hero_badge: "Welcome to my digital world",
-        hero_title: "Mahmoud Khalil", hero_subtitle: "Cybersecurity & Computer Engineer",
+        hero_title: "Mahmoud Khalil", hero_subtitle: "Cybersecurity Engineer",
         hero_desc: "Expert in systems and network administration, a technical lecturer dedicated to securing cyberspace and spreading knowledge.",
         btn_academy: "Enter Academy", btn_youtube: "YouTube Channel",
         exp_title: "Professional Journey",
